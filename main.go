@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open(".dockerenv")
+	f, err := os.Open(os.Args[1])
 	if err != nil {
 		log.Fatal(err)
 	}
